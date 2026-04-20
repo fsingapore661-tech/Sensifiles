@@ -1,0 +1,951 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>WHITEX - BEST SENSI APPS FOR FREE</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Pacifico&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Great+Vibes&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Lobster&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Sacramento&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Satisfy&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Indie+Flower&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Kaushan+Script&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Courgette&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Yellowtail&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Allura&display=swap" rel="stylesheet">
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        
+        :root {
+            --primary: #8a2be2;
+            --primary-dark: #6a0dad;
+            --primary-light: #9370db;
+            --accent: #ff00ff;
+            --dark: #0a0a0a;
+            --darker: #050505;
+            --light: #f8f8f8;
+            --gray: #2a2a2a;
+            --gray-light: #3a3a3a;
+            --success: #00c853;
+            --warning: #ff9800;
+        }
+        
+        body {
+            background: var(--darker);
+            color: var(--light);
+            min-height: 100vh;
+            overflow-x: hidden;
+            line-height: 1.6;
+            font-family: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, sans-serif;
+        }
+        
+        .parallax-container {
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            z-index: -1;
+            perspective: 1000px;
+        }
+        
+        .parallax-layer {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+        }
+        
+        #stars-back {
+            background: radial-gradient(circle at center, #0a0a2a 0%, #000000 70%);
+            transform: translateZ(-500px) scale(2);
+        }
+        
+        #stars {
+            background-image: 
+                radial-gradient(2px 2px at 20px 30px, #eee, rgba(0,0,0,0)),
+                radial-gradient(2px 2px at 40px 70px, #fff, rgba(0,0,0,0)),
+                radial-gradient(2px 2px at 50px 160px, #ddd, rgba(0,0,0,0)),
+                radial-gradient(2px 2px at 90px 40px, #fff, rgba(0,0,0,0)),
+                radial-gradient(2px 2px at 130px 80px, #fff, rgba(0,0,0,0)),
+                radial-gradient(2px 2px at 160px 120px, #ddd, rgba(0,0,0,0)),
+                radial-gradient(2px 2px at 200px 80px, #eee, rgba(0,0,0,0)),
+                radial-gradient(2px 2px at 230px 110px, #fff, rgba(0,0,0,0)),
+                radial-gradient(2px 2px at 280px 30px, #ddd, rgba(0,0,0,0)),
+                radial-gradient(2px 2px at 300px 150px, #eee, rgba(0,0,0,0));
+            background-repeat: repeat;
+            background-size: 300px 300px;
+            transform: translateZ(-300px) scale(1.6);
+            opacity: 0.7;
+            animation: twinkle 8s infinite alternate;
+        }
+        
+        #nebula {
+            background: 
+                radial-gradient(circle at 20% 30%, rgba(75, 0, 130, 0.4) 0%, transparent 50%),
+                radial-gradient(circle at 80% 70%, rgba(106, 13, 173, 0.3) 0%, transparent 50%),
+                radial-gradient(circle at 40% 80%, rgba(138, 43, 226, 0.2) 0%, transparent 40%);
+            transform: translateZ(-200px) scale(1.4);
+            opacity: 0.6;
+        }
+        
+        #planets {
+            background: 
+                radial-gradient(circle at 75% 20%, rgba(255, 215, 0, 0.1) 0%, transparent 30%),
+                radial-gradient(circle at 25% 65%, rgba(100, 149, 237, 0.1) 0%, transparent 25%);
+            transform: translateZ(-100px) scale(1.2);
+            opacity: 0.5;
+        }
+        
+        @keyframes twinkle {
+            0%, 100% { opacity: 0.7; }
+            50% { opacity: 0.9; }
+        }
+        
+        ::-webkit-scrollbar {
+            width: 10px;
+        }
+        
+        ::-webkit-scrollbar-track {
+            background: var(--darker);
+        }
+        
+        ::-webkit-scrollbar-thumb {
+            background: var(--primary);
+            border-radius: 5px;
+        }
+        
+        .container {
+            width: 100%;
+            max-width: 1000px;
+            margin: 0 auto;
+            padding: 0 20px;
+            position: relative;
+            z-index: 10;
+        }
+        
+        header {
+            padding: 40px 0 20px;
+            text-align: center;
+            position: relative;
+        }
+        
+        .logo {
+            font-size: 4.5rem;
+            font-weight: 800;
+            color: var(--light);
+            display: inline-block;
+            margin-bottom: 15px;
+            transition: all 0.5s ease;
+            cursor: pointer;
+            position: relative;
+            animation: fontChange 30s infinite;
+        }
+        
+        @keyframes fontChange {
+            0% { font-family: 'Comic Sans MS', cursive; }
+            10% { font-family: 'Dancing Script', cursive; }
+            20% { font-family: 'Pacifico', cursive; }
+            30% { font-family: 'Great Vibes', cursive; }
+            40% { font-family: 'Lobster', cursive; }
+            50% { font-family: 'Sacramento', cursive; }
+            60% { font-family: 'Satisfy', cursive; }
+            70% { font-family: 'Indie Flower', cursive; }
+            80% { font-family: 'Kaushan Script', cursive; }
+            90% { font-family: 'Courgette', cursive; }
+            100% { font-family: 'Allura', cursive; }
+        }
+        
+        .tagline {
+            font-size: 1.2rem;
+            color: var(--primary-light);
+            margin-bottom: 40px;
+        }
+        
+        .search-section {
+            padding: 30px 0;
+            text-align: center;
+        }
+        
+        .search-container {
+            background: rgba(0, 5, 20, 0.7);
+            backdrop-filter: blur(10px);
+            border-radius: 20px;
+            padding: 30px;
+            max-width: 600px;
+            margin: 0 auto;
+            box-shadow: 0 10px 30px rgba(0, 0, 0, 0.5);
+            border: 1px solid rgba(100, 149, 237, 0.3);
+        }
+        
+        .search-title {
+            font-size: 1.8rem;
+            margin-bottom: 20px;
+            font-weight: 600;
+        }
+        
+        .search-box {
+            display: flex;
+            margin-bottom: 20px;
+        }
+        
+        .search-input {
+            flex: 1;
+            padding: 15px 20px;
+            border: none;
+            border-radius: 10px 0 0 10px;
+            background: rgba(0, 0, 0, 0.4);
+            color: var(--light);
+            font-size: 1rem;
+            outline: none;
+            border: 1px solid rgba(255, 255, 255, 0.1);
+        }
+        
+        .search-btn {
+            padding: 15px 25px;
+            background: linear-gradient(to right, var(--primary), var(--primary-dark));
+            border: none;
+            border-radius: 0 10px 10px 0;
+            color: white;
+            font-weight: 600;
+            cursor: pointer;
+            transition: all 0.3s ease;
+        }
+        
+        .search-btn:hover {
+            background: linear-gradient(to right, var(--primary-dark), var(--primary));
+            transform: translateY(-2px);
+        }
+        
+        .results {
+            display: none;
+            margin-top: 30px;
+            text-align: left;
+        }
+        
+        .result-item {
+            margin-bottom: 15px;
+            padding: 15px;
+            background: rgba(0, 0, 0, 0.3);
+            border-radius: 10px;
+            display: flex;
+            align-items: center;
+            backdrop-filter: blur(10px);
+            border: 1px solid rgba(255, 255, 255, 0.1);
+        }
+        
+        .result-item i {
+            margin-right: 10px;
+            color: var(--primary);
+            font-size: 1.2rem;
+        }
+        
+        /* TASK SECTION STYLES */
+        .task-section {
+            display: none;
+            margin-top: 30px;
+            text-align: left;
+        }
+        
+        .task-card {
+            background: rgba(0, 0, 0, 0.5);
+            backdrop-filter: blur(10px);
+            border-radius: 15px;
+            padding: 20px;
+            margin-bottom: 20px;
+            border: 1px solid rgba(255, 255, 255, 0.1);
+            transition: all 0.3s ease;
+        }
+        
+        .task-card.completed {
+            border-color: var(--success);
+            background: rgba(0, 200, 83, 0.1);
+        }
+        
+        .task-header {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            margin-bottom: 15px;
+            flex-wrap: wrap;
+            gap: 10px;
+        }
+        
+        .task-platform {
+            display: flex;
+            align-items: center;
+            gap: 10px;
+        }
+        
+        .task-platform i {
+            font-size: 1.8rem;
+        }
+        
+        .platform-instagram { color: #E4405F; }
+        .platform-youtube { color: #FF0000; }
+        .platform-whatsapp { color: #25D366; }
+        .platform-telegram { color: #26A5E4; }
+        
+        .task-status {
+            padding: 5px 12px;
+            border-radius: 20px;
+            font-size: 0.8rem;
+            font-weight: 600;
+        }
+        
+        .task-status.pending {
+            background: rgba(255, 152, 0, 0.2);
+            color: var(--warning);
+            border: 1px solid var(--warning);
+        }
+        
+        .task-status.completed {
+            background: rgba(0, 200, 83, 0.2);
+            color: var(--success);
+            border: 1px solid var(--success);
+        }
+        
+        .task-link {
+            color: var(--primary-light);
+            text-decoration: none;
+            word-break: break-all;
+            display: inline-block;
+            margin: 10px 0;
+        }
+        
+        .task-link:hover {
+            color: var(--primary);
+        }
+        
+        .verify-btn {
+            padding: 10px 20px;
+            background: linear-gradient(135deg, var(--primary), var(--primary-dark));
+            border: none;
+            border-radius: 10px;
+            color: white;
+            cursor: pointer;
+            font-weight: 600;
+            transition: all 0.3s ease;
+            margin-top: 10px;
+        }
+        
+        .verify-btn:disabled {
+            opacity: 0.5;
+            cursor: not-allowed;
+        }
+        
+        .verify-btn.verified {
+            background: var(--success);
+        }
+        
+        .download-section {
+            display: none;
+            background: rgba(0, 0, 0, 0.7);
+            backdrop-filter: blur(10px);
+            border-radius: 15px;
+            padding: 25px;
+            margin-top: 20px;
+            border: 2px solid var(--success);
+            text-align: center;
+        }
+        
+        .download-details {
+            margin-bottom: 20px;
+        }
+        
+        .download-details p {
+            margin: 10px 0;
+            font-size: 1.1rem;
+        }
+        
+        .download-details strong {
+            color: var(--primary-light);
+        }
+        
+        .download-btn {
+            display: inline-block;
+            padding: 15px 40px;
+            background: linear-gradient(135deg, var(--success), #009688);
+            border: none;
+            border-radius: 50px;
+            color: white;
+            font-size: 1.2rem;
+            font-weight: 700;
+            cursor: pointer;
+            text-decoration: none;
+            transition: all 0.3s ease;
+        }
+        
+        .download-btn:hover {
+            transform: scale(1.05);
+            box-shadow: 0 5px 20px rgba(0, 200, 83, 0.3);
+        }
+        
+        .task-progress {
+            text-align: center;
+            margin-bottom: 20px;
+            font-size: 1rem;
+        }
+        
+        .task-progress span {
+            color: var(--primary-light);
+            font-weight: bold;
+        }
+        
+        .loader {
+            display: none;
+            text-align: center;
+            margin: 20px 0;
+        }
+        
+        .loader .dot {
+            display: inline-block;
+            width: 10px;
+            height: 10px;
+            border-radius: 50%;
+            background: var(--primary);
+            margin: 0 5px;
+            animation: bounce 1.5s infinite ease-in-out;
+        }
+        
+        @keyframes bounce {
+            0%, 100% { transform: translateY(0); }
+            50% { transform: translateY(-8px); }
+        }
+        
+        .glass-btn {
+            padding: 15px 30px;
+            background: rgba(255, 255, 255, 0.1);
+            backdrop-filter: blur(10px);
+            border: 1px solid rgba(255, 255, 255, 0.2);
+            border-radius: 12px;
+            color: white;
+            font-weight: 600;
+            cursor: pointer;
+            transition: all 0.3s ease;
+        }
+        
+        .ai-tool-section {
+            padding: 40px 0;
+            text-align: center;
+        }
+        
+        .gif-container {
+            position: relative;
+            display: inline-block;
+            overflow: hidden;
+            border-radius: 20px;
+            width: 400px;
+            height: 250px;
+            transition: transform 0.3s ease;
+        }
+        
+        .gif-container img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            border-radius: 20px;
+        }
+        
+        .gif-container:hover {
+            transform: scale(1.05) rotate(2deg);
+        }
+        
+        .platform-icons {
+            display: flex;
+            justify-content: center;
+            gap: 30px;
+            margin: 20px 0;
+        }
+        
+        .platform-icon i {
+            font-size: 2.5rem;
+            color: var(--primary-light);
+        }
+        
+        .about-section {
+            padding: 60px 0;
+        }
+        
+        .about-title {
+            font-size: 2.2rem;
+            margin-bottom: 25px;
+            color: var(--primary-light);
+            text-align: center;
+        }
+        
+        .feature-list {
+            list-style: none;
+            margin: 25px 0;
+        }
+        
+        .feature-list li {
+            margin-bottom: 12px;
+            padding-left: 30px;
+            position: relative;
+        }
+        
+        .feature-list li:before {
+            content: "✓";
+            color: var(--primary);
+            position: absolute;
+            left: 0;
+        }
+        
+        .social-section {
+            padding: 40px 0;
+            text-align: center;
+        }
+        
+        .social-icon {
+            display: inline-flex;
+            align-items: center;
+            justify-content: center;
+            width: 60px;
+            height: 60px;
+            background: rgba(255, 255, 255, 0.05);
+            border-radius: 50%;
+            margin: 0 15px;
+            transition: all 0.3s ease;
+            color: var(--light);
+            font-size: 1.8rem;
+            text-decoration: none;
+        }
+        
+        .social-icon:hover {
+            background: var(--primary);
+            transform: translateY(-5px);
+        }
+        
+        footer {
+            padding: 40px 0;
+            text-align: center;
+            background: rgba(5, 5, 10, 0.8);
+            margin-top: 60px;
+        }
+        
+        @media (max-width: 768px) {
+            .logo { font-size: 3rem; }
+            .gif-container { width: 250px; height: 180px; }
+            .task-header { flex-direction: column; align-items: flex-start; }
+        }
+    </style>
+</head>
+<body>
+    <div class="parallax-container">
+        <div class="parallax-layer" id="stars-back"></div>
+        <div class="parallax-layer" id="stars"></div>
+        <div class="parallax-layer" id="nebula"></div>
+        <div class="parallax-layer" id="planets"></div>
+    </div>
+    
+    <div class="container">
+        <header>
+            <h1 class="logo" id="logo">WHITEX</h1>
+            <p class="tagline">BEST SENSI APPS FOR FREE</p>
+        </header>
+        
+        <section class="search-section">
+            <div class="search-container">
+                <h2 class="search-title">Enter Your Access Code</h2>
+                <div class="search-box">
+                    <input type="text" class="search-input" id="code-input" placeholder="Enter your code...">
+                    <button class="search-btn" id="search-btn">
+                        <i class="fas fa-search"></i> Search
+                    </button>
+                </div>
+                
+                <div class="loader" id="loader">
+                    <div class="dot"></div>
+                    <div class="dot"></div>
+                    <div class="dot"></div>
+                </div>
+                
+                <div class="results" id="results">
+                    <div class="result-item">
+                        <i class="fas fa-tag"></i>
+                        <span>Name: <span id="result-name">-</span></span>
+                    </div>
+                    <div class="result-item">
+                        <i class="fas fa-key"></i>
+                        <span>Password: <span id="result-password">-</span></span>
+                    </div>
+                </div>
+                
+                <!-- TASK SECTION - Ye Token section ki jagah aayega -->
+                <div class="task-section" id="task-section">
+                    <div class="task-progress" id="task-progress">
+                        Progress: <span id="completed-tasks">0</span>/<span id="total-tasks">0</span> tasks completed
+                    </div>
+                    <div id="tasks-list"></div>
+                    
+                    <!-- Download section - Saare tasks complete hone par dikhega -->
+                    <div class="download-section" id="download-section">
+                        <h3><i class="fas fa-unlock-alt"></i> Access Unlocked!</h3>
+                        <div class="download-details" id="download-details">
+                            <p><strong>File:</strong> <span id="download-name">-</span></p>
+                            <p><strong>Password:</strong> <span id="download-password">-</span></p>
+                        </div>
+                        <a href="#" class="download-btn" id="download-btn">
+                            <i class="fas fa-download"></i> Download Now
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </section>
+        
+        <section class="ai-tool-section">
+            <div class="gif-container">
+                <img src="https://i.pinimg.com/originals/a9/2c/36/a92c36b728a5ccab8972f6b9f1f0dc0a.gif" alt="AI Tool Animation" />
+            </div>
+            <h3 class="ai-tool-title">AI PERFECTO</h3>
+            <p>Advanced AI-powered sensitivity for all devices</p>
+            <div class="platform-icons">
+                <div class="platform-icon"><i class="fab fa-android"></i></div>
+                <div class="platform-icon"><i class="fab fa-apple"></i></div>
+            </div>
+            <button class="glass-btn" id="ai-tool-btn">
+                <i class="fas fa-play"></i> Try AI Sensi
+            </button>
+        </section>
+        
+        <section class="about-section">
+            <h2 class="about-title">About WHITEX Sensi Tools</h2>
+            <div class="about-content">
+                <p>WHITEX provides the ultimate AI-powered sensitivity optimization tools for both Android and iOS devices.</p>
+                <ul class="feature-list">
+                    <li>Optimize device performance for gaming</li>
+                    <li>Generate personalized sensitivity settings using AI</li>
+                    <li>Improve touch response and accuracy</li>
+                    <li>Reduce lag and increase frame rate stability</li>
+                </ul>
+            </div>
+        </section>
+        
+        <section class="social-section">
+            <h2 class="social-title">Follow for Updates</h2>
+            <div class="social-icons">
+                <a href="https://www.instagram.com/ig_whitex?igsh=cTcxeGU4NGY4YmNl" target="_blank" class="social-icon">
+                    <i class="fab fa-instagram"></i>
+                </a>
+            </div>
+        </section>
+    </div>
+    
+    <footer>
+        <div class="container">
+            <p class="footer-text">©WHITEX | AI Perfecto Sensi Generator</p>
+        </div>
+    </footer>
+
+    <script src="https://www.gstatic.com/firebasejs/9.23.0/firebase-app-compat.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/9.23.0/firebase-firestore-compat.js"></script>
+
+    <script>
+         // Firebase configuration - OLD WORKING ONE
+        const firebaseConfig = {
+            apiKey: "AIzaSyAA0G63crNGl78SjLnSWIqWTqARNhAoMKI",
+            authDomain: "instatool-e71ab.firebaseapp.com",
+            projectId: "instatool-e71ab",
+            storageBucket: "instatool-e71ab.firebasestorage.app",
+            messagingSenderId: "323942632136",
+            appId: "1:323942632136:web:7bdb4c6f2e94183a67b3fd",
+            measurementId: "G-PS9L97SSQC"
+        };
+        
+        firebase.initializeApp(firebaseConfig);
+        const db = firebase.firestore();
+        
+        // DOM Elements
+        const codeInput = document.getElementById('code-input');
+        const searchBtn = document.getElementById('search-btn');
+        const results = document.getElementById('results');
+        const resultName = document.getElementById('result-name');
+        const resultPassword = document.getElementById('result-password');
+        const loader = document.getElementById('loader');
+        const taskSection = document.getElementById('task-section');
+        const tasksList = document.getElementById('tasks-list');
+        const downloadSection = document.getElementById('download-section');
+        const downloadName = document.getElementById('download-name');
+        const downloadPassword = document.getElementById('download-password');
+        const downloadBtn = document.getElementById('download-btn');
+        const completedTasksSpan = document.getElementById('completed-tasks');
+        const totalTasksSpan = document.getElementById('total-tasks');
+        const logo = document.getElementById('logo');
+        const aiToolBtn = document.getElementById('ai-tool-btn');
+        
+        // State variables
+        let currentCodeData = null;
+        let currentTasks = [];
+        let completedTasks = [];
+        let currentDriveLink = '';
+        
+        // Logo animation
+        const effects = ['flip', 'tilt', 'jump', 'spin', 'expand', 'shake'];
+        let currentEffect = 0;
+        
+        logo.addEventListener('click', () => {
+            logo.classList.remove(...effects);
+            void logo.offsetWidth;
+            logo.classList.add(effects[currentEffect]);
+            currentEffect = (currentEffect + 1) % effects.length;
+        });
+        
+        // AI Tool Button
+        aiToolBtn.addEventListener('click', () => {
+            window.location.href = 'https://whitexsensi.vercel.app/';
+        });
+        
+        // Load completed tasks from localStorage
+        function loadCompletedTasks(code) {
+            const saved = localStorage.getItem(`completed_${code}`);
+            if (saved) {
+                completedTasks = JSON.parse(saved);
+            } else {
+                completedTasks = [];
+            }
+        }
+        
+        // Save completed tasks to localStorage
+        function saveCompletedTasks(code) {
+            localStorage.setItem(`completed_${code}`, JSON.stringify(completedTasks));
+        }
+        
+        // Update progress display
+        function updateProgress() {
+            const completed = completedTasks.length;
+            const total = currentTasks.length;
+            completedTasksSpan.textContent = completed;
+            totalTasksSpan.textContent = total;
+            
+            // Check if all tasks are completed
+            if (completed === total && total > 0) {
+                showDownloadSection();
+            }
+        }
+        
+        // Show download section with file details
+        function showDownloadSection() {
+            if (currentCodeData) {
+                downloadName.textContent = currentCodeData.name || 'Not available';
+                downloadPassword.textContent = currentCodeData.password || 'Not available';
+                downloadBtn.href = currentDriveLink;
+                downloadSection.style.display = 'block';
+            }
+        }
+        
+        // Verify a task
+        async function verifyTask(taskId, taskIndex) {
+            // Check if already completed
+            if (completedTasks.includes(taskId)) {
+                alert('Task already completed!');
+                return;
+            }
+            
+            // Simulate verification (in production, you might want to check actual follow)
+            const task = currentTasks[taskIndex];
+            
+            // Open the task link in new tab for user to complete
+            if (task.link) {
+                window.open(task.link, '_blank');
+            }
+            
+            // Ask for confirmation
+            const confirmComplete = confirm(`Have you completed this task?\n\n${task.text || task.type}\n\nClick OK after you have followed/subscribed.`);
+            
+            if (confirmComplete) {
+                // Mark as completed
+                completedTasks.push(taskId);
+                saveCompletedTasks(currentCodeData.code);
+                updateProgress();
+                
+                // Refresh task display
+                displayTasks();
+            }
+        }
+        
+        // Display tasks in UI
+        function displayTasks() {
+            if (!currentTasks || currentTasks.length === 0) {
+                tasksList.innerHTML = '<div class="task-card">No tasks configured for this code.</div>';
+                return;
+            }
+            
+            let html = '';
+            currentTasks.forEach((task, index) => {
+                const isCompleted = completedTasks.includes(task.id);
+                const platformClass = task.type === 'instagram' ? 'platform-instagram' : 
+                                     (task.type === 'youtube' ? 'platform-youtube' : 
+                                     (task.type === 'whatsapp' ? 'platform-whatsapp' : 'platform-telegram'));
+                const platformIcon = task.type === 'instagram' ? 'fab fa-instagram' :
+                                    (task.type === 'youtube' ? 'fab fa-youtube' :
+                                    (task.type === 'whatsapp' ? 'fab fa-whatsapp' : 'fab fa-telegram'));
+                
+                html += `
+                    <div class="task-card ${isCompleted ? 'completed' : ''}">
+                        <div class="task-header">
+                            <div class="task-platform">
+                                <i class="${platformIcon} ${platformClass}"></i>
+                                <strong>${task.type.toUpperCase()}</strong>
+                            </div>
+                            <div class="task-status ${isCompleted ? 'completed' : 'pending'}">
+                                ${isCompleted ? '✓ Completed' : '⏳ Pending'}
+                            </div>
+                        </div>
+                        <div class="task-content">
+                            <p>${task.text || (task.type === 'instagram' ? 'Follow on Instagram' : 
+                                (task.type === 'youtube' ? 'Subscribe on YouTube' : 
+                                (task.type === 'whatsapp' ? 'Join WhatsApp Channel' : 'Join Telegram')))}</p>
+                            ${task.link ? `<a href="${task.link}" target="_blank" class="task-link">${task.link}</a>` : ''}
+                        </div>
+                        ${!isCompleted ? `
+                            <button class="verify-btn" data-task-id="${task.id}" data-task-index="${index}">
+                                <i class="fas fa-check-circle"></i> Verify & Complete
+                            </button>
+                        ` : ''}
+                    </div>
+                `;
+            });
+            
+            tasksList.innerHTML = html;
+            
+            // Add event listeners to verify buttons
+            document.querySelectorAll('.verify-btn').forEach(btn => {
+                btn.addEventListener('click', (e) => {
+                    const taskId = btn.getAttribute('data-task-id');
+                    const taskIndex = parseInt(btn.getAttribute('data-task-index'));
+                    verifyTask(taskId, taskIndex);
+                });
+            });
+        }
+        
+        // Fetch tasks for a user from Firestore
+        async function fetchUserTasks(username) {
+            try {
+                console.log('Fetching tasks for user:', username);
+                const tasksRef = db.collection('userTasks');
+                const querySnapshot = await tasksRef.where('userId', '==', username).get();
+                
+                const tasks = [];
+                querySnapshot.forEach((doc) => {
+                    const taskData = doc.data();
+                    tasks.push({
+                        id: doc.id,
+                        type: taskData.type || 'instagram',
+                        link: taskData.link || '',
+                        text: taskData.text || '',
+                        userId: taskData.userId
+                    });
+                });
+                
+                console.log('Tasks found:', tasks.length);
+                return tasks;
+            } catch (error) {
+                console.error('Error fetching tasks:', error);
+                return [];
+            }
+        }
+        
+        // Search code function
+        async function searchCode() {
+            const code = codeInput.value.trim();
+            
+            if (!code) {
+                alert('Please enter a code');
+                return;
+            }
+            
+            // Reset UI
+            loader.style.display = 'block';
+            results.style.display = 'none';
+            taskSection.style.display = 'none';
+            downloadSection.style.display = 'none';
+            currentTasks = [];
+            completedTasks = [];
+            currentCodeData = null;
+            
+            try {
+                // Search in codes collection
+                const docRef = db.collection('codes').doc(code);
+                const doc = await docRef.get();
+                
+                if (doc.exists) {
+                    const data = doc.data();
+                    currentCodeData = {
+                        code: code,
+                        name: data.name || 'Not available',
+                        password: data.password || 'Not available',
+                        driveLink: data.driveLink || '',
+                        user: data.user || ''
+                    };
+                    currentDriveLink = data.driveLink || '';
+                    
+                    // Show basic results
+                    resultName.textContent = data.name || 'Not available';
+                    resultPassword.textContent = data.password || 'Not available';
+                    results.style.display = 'block';
+                    
+                    // Load completed tasks for this code
+                    loadCompletedTasks(code);
+                    
+                    // Fetch tasks for this user
+                    const userTasks = await fetchUserTasks(data.user);
+                    currentTasks = userTasks;
+                    
+                    if (currentTasks.length > 0) {
+                        taskSection.style.display = 'block';
+                        updateProgress();
+                        displayTasks();
+                    } else {
+                        // No tasks configured, directly show download
+                        taskSection.style.display = 'block';
+                        updateProgress();
+                        displayTasks();
+                        // If no tasks, auto-show download
+                        if (currentTasks.length === 0) {
+                            showDownloadSection();
+                        }
+                    }
+                    
+                } else {
+                    alert('Code not found in database');
+                }
+                
+            } catch (error) {
+                console.error('Error searching code:', error);
+                alert('Error retrieving data. Please try again.');
+            } finally {
+                loader.style.display = 'none';
+            }
+        }
+        
+        // Event listeners
+        searchBtn.addEventListener('click', searchCode);
+        codeInput.addEventListener('keypress', (e) => {
+            if (e.key === 'Enter') searchCode();
+        });
+        
+        // Parallax effect
+        window.addEventListener('scroll', () => {
+            const scrolled = window.pageYOffset;
+            const parallaxLayers = document.querySelectorAll('.parallax-layer');
+            parallaxLayers.forEach((layer, index) => {
+                const speed = 0.5 * (index + 1);
+                const yPos = -(scrolled * speed / 3);
+                layer.style.transform = `translateY(${yPos}px)`;
+            });
+        });
+        
+        console.log('Website loaded. Task-based system active.');
+    </script>
+</body>
+</html>
